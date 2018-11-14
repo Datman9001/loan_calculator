@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .collection{
+            display: none;
+        }
+
+        .progress{
+            display: none;
+        }
+
+        
+    </style>
+
+</head>
+
+<body class="blue-grey lighten-1">
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="card">
+                                <div class="card-content">
+                                    <span class="card-title center">
+                                        <h4><strong>Loan Calculator</strong></h4>
+                                    </span>
+                                    <br>
+                                    <div class="row">
+                                        <form class="col s12" id="loan-form">
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <i class="material-icons prefix">monetization_on</i>
+                                                    <input id="amount" type="number">
+                                                    <label for="amount">Loan Amount</label>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <i class="material-icons prefix">payment</i>
+                                                    <input id="interest" type="number">
+                                                    <label for="interest">Interest</label>
+                                                </div>
+                                                <div class="input-field col s12">
+                                                    <i class="material-icons prefix">event</i>
+                                                    <input id="years" type="number">
+                                                    <label for="years">Years To Repay</label>
+                                                </div>
+
+                                            </div>
+                                            <div class="center">
+                                                <input type="submit" class="btn" value="Calculate">
+                                            </div>
+
+                                        </form>
+
+
+
+
+
+                                    </div>
+
+                                </div>
+
+                                 
+
+                            </div>
+                            <ul class="collection">
+                                    <li class="collection-item">Monthly Payment: <blockquote id="monthly-payments"></blockquote>  </li>
+                                    <li class="collection-item">
+                                        Total-Payment
+                                        <blockquote id="total-payment"></blockquote>
+
+                                    </li>
+                                    <li class="collection-item">
+                                            Total-Interest
+                                            <blockquote id="total-interest"></blockquote>
+
+                                    </li>
+                                    
+                                  </ul>
+                         
+                        </div>
+                        <!-- end of row for card -->
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- loader -->
+        <div class="row center">
+            <div class="col m6 offset-m3">
+               
+                    <div class="progress">
+                            <div class="indeterminate"></div>
+                        </div>
+                 
+            </div>
+        </div>
+       
+            <!-- Alert Popup -->
+            
+
+    </main>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
